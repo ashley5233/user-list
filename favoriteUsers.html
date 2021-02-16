@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./favoriteUsers.css">
+  <title> My Friends</title>
+</head>
+<!-- Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand " href="#">
+    <img src="https://res.cloudinary.com/dnivakimu/image/upload/v1611590929/IMG_0070_cdnfmy.png" width="80" height="80"
+      alt="logo">
+    .。
+  </a>
+  <a class="navbar-brand" href="#">TRAVEL WITH MEEE!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto  justify-content-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./favoriteUsers.html"> Travel Friends</a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://eng.taiwan.net.tw/m1.aspx?sNo=0000218" target="_blank"> Travel Information
+        </a>
+      </li>
+    </ul>
+    <!-- search bar -->
+    <form class="form-inline my-2 my-lg-0" id="search-form">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search friend..." aria-label="Search"
+        id="search-input">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="container mt-5 ">
+  <div class="title">
+    <h2> Let's go! </h2>
+  </div>
+  <!-- card -->
+  <div class="row" id="data-panel"></div>
+
+  <!-- modal -->
+  <div class="modal" tabindex="-1" role="dialog" id="user-info">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-name">Modal name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="user-avatar" id="modal-avatar"></div>
+            </div>
+            <div class="col-sm-8">
+              <p id="modal-surname"></p>
+              <p id="modal-gender"></p>
+              <p id="modal-birthday"></p>
+              <p id="modal-email"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<body>
+
+
+  <!-- bootstrap & axios CDN -->
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./favoriteUsers.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
